@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:DrawingHackWich.xcodeproj">
+      location = "self:/Users/student/Desktop/DrawingHackWich/AudioHackWich.xcodeproj">
    </FileRef>
 </Workspace>

@@ -12,16 +12,20 @@
 		3F73B5E41E254D660084F154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F73B5E21E254D660084F154 /* Main.storyboard */; };
 		3F73B5E61E254D660084F154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F73B5E51E254D660084F154 /* Assets.xcassets */; };
 		3F73B5E91E254D660084F154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F73B5E71E254D660084F154 /* LaunchScreen.storyboard */; };
+		3F73B5FA1E2554CB0084F154 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F73B5F91E2554CB0084F154 /* AVFoundation.framework */; };
+		3F73B5FD1E2554F20084F154 /* Drum Roll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F73B5FC1E2554F20084F154 /* Drum Roll.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F73B5DB1E254D660084F154 /* DrawingHackWich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingHackWich.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F73B5DB1E254D660084F154 /* AudioHackWich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioHackWich.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F73B5DE1E254D660084F154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F73B5E01E254D660084F154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F73B5E31E254D660084F154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F73B5E51E254D660084F154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F73B5E81E254D660084F154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F73B5EA1E254D660084F154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F73B5F91E2554CB0084F154 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3F73B5FC1E2554F20084F154 /* Drum Roll.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Drum Roll.mp3"; path = "../../../Downloads/Drum Roll.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F73B5FA1E2554CB0084F154 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,13 +45,15 @@
 			children = (
 				3F73B5DD1E254D660084F154 /* DrawingHackWich */,
 				3F73B5DC1E254D660084F154 /* Products */,
+				3F73B5FB1E2554DB0084F154 /* Sounds */,
+				3F73B5F81E2554CB0084F154 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		3F73B5DC1E254D660084F154 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3F73B5DB1E254D660084F154 /* DrawingHackWich.app */,
+				3F73B5DB1E254D660084F154 /* AudioHackWich.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,8 +61,8 @@
 		3F73B5DD1E254D660084F154 /* DrawingHackWich */ = {
 			isa = PBXGroup;
 			children = (
-				3F73B5DE1E254D660084F154 /* AppDelegate.swift */,
 				3F73B5E01E254D660084F154 /* ViewController.swift */,
+				3F73B5DE1E254D660084F154 /* AppDelegate.swift */,
 				3F73B5E21E254D660084F154 /* Main.storyboard */,
 				3F73B5E51E254D660084F154 /* Assets.xcassets */,
 				3F73B5E71E254D660084F154 /* LaunchScreen.storyboard */,
@@ -64,12 +71,29 @@
 			path = DrawingHackWich;
 			sourceTree = "<group>";
 		};
+		3F73B5F81E2554CB0084F154 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F73B5F91E2554CB0084F154 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F73B5FB1E2554DB0084F154 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3F73B5FC1E2554F20084F154 /* Drum Roll.mp3 */,
+			);
+			name = Sounds;
+			path = DrawingHackWich;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3F73B5DA1E254D650084F154 /* DrawingHackWich */ = {
+		3F73B5DA1E254D650084F154 /* AudioHackWich */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F73B5ED1E254D660084F154 /* Build configuration list for PBXNativeTarget "DrawingHackWich" */;
+			buildConfigurationList = 3F73B5ED1E254D660084F154 /* Build configuration list for PBXNativeTarget "AudioHackWich" */;
 			buildPhases = (
 				3F73B5D71E254D650084F154 /* Sources */,
 				3F73B5D81E254D650084F154 /* Frameworks */,
@@ -79,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = DrawingHackWich;
+			name = AudioHackWich;
 			productName = DrawingHackWich;
-			productReference = 3F73B5DB1E254D660084F154 /* DrawingHackWich.app */;
+			productReference = 3F73B5DB1E254D660084F154 /* AudioHackWich.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3F73B5D61E254D650084F154 /* Build configuration list for PBXProject "DrawingHackWich" */;
+			buildConfigurationList = 3F73B5D61E254D650084F154 /* Build configuration list for PBXProject "AudioHackWich" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3F73B5DA1E254D650084F154 /* DrawingHackWich */,
+				3F73B5DA1E254D650084F154 /* AudioHackWich */,
 			);
 		};
 /* End PBXProject section */
@@ -126,6 +150,7 @@
 			files = (
 				3F73B5E91E254D660084F154 /* LaunchScreen.storyboard in Resources */,
 				3F73B5E61E254D660084F154 /* Assets.xcassets in Resources */,
+				3F73B5FD1E2554F20084F154 /* Drum Roll.mp3 in Resources */,
 				3F73B5E41E254D660084F154 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +311,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3F73B5D61E254D650084F154 /* Build configuration list for PBXProject "DrawingHackWich" */ = {
+		3F73B5D61E254D650084F154 /* Build configuration list for PBXProject "AudioHackWich" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F73B5EB1E254D660084F154 /* Debug */,
@@ -295,7 +320,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F73B5ED1E254D660084F154 /* Build configuration list for PBXNativeTarget "DrawingHackWich" */ = {
+		3F73B5ED1E254D660084F154 /* Build configuration list for PBXNativeTarget "AudioHackWich" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F73B5EE1E254D660084F154 /* Debug */,

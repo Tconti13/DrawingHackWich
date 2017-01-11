@@ -7,19 +7,33 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    
+      var audioBegin = AVAudioPlayer()
+    var drumRoll = URL(fileURLWithPath: Bundle.main.path(forResource: "Drum Roll", ofType: "mp3")!)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func pitch1(_ sender: UIButton) {
+        do
+        {
+            try audioBegin = AVAudioPlayer(contentsOf: drumRoll, fileTypeHint: AVFileTypeMPEGLayer3)
+        }
+        catch
+        {
+            print("Error")
+        }
+        audioBegin.prepareToPlay()
+        audioBegin.play()
     }
 
 
+    
+    
 }
 
